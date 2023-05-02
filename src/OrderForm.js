@@ -77,14 +77,14 @@ function OrderForm({fetchOrders}) {
         
         .then(data =>{
             fetchOrders(data)
-            setName('')
-            setNumber('')
-            setEmail('')
-            setType('STUDIO APARTMENT')
-            setCategory('SILVER')
-            setRange(10)
-            setPickup('')
-            setDestination('')
+            // setName("")
+            // setNumber("")
+            // setEmail("")
+            // setType("STUDIO APARTMENT")
+            // setCategory("SILVER")
+            // setRange(10)
+            // setPickup("")
+            // setDestination("")
     }
     )
       .catch((error) => {
@@ -163,96 +163,3 @@ function OrderForm({fetchOrders}) {
 }
 
  export default OrderForm
-// import React, { useState } from 'react'
-// function OrderForm() {
-//   const [range, setRange] = useState(0);
-//   const [type, setType] = useState("");
-//   const [category, setCategory] = useState("");
-//   const [pickup, setPickup] = useState("");
-//   const [destination, setDestination] = useState("");
-
-//   function handleChangeRange(e) {
-//     setRange(e.target.value);
-//   }
-
-//   function handleChangeType(e) {
-//     setType(e.target.value);
-//   }
-
-//   function handleChangeCategory(e) {
-//     setCategory(e.target.value);
-//   }
-
-//   function handleChangePickup(e) {
-//     setPickup(e.target.value);
-//   }
-
-//   function handleChangeDestination(e) {
-//     setDestination(e.target.value);
-//   }
-
-//   function handleSubmit(e) {
-//     e.preventDefault();
-//     const data = {
-//       range: range,
-//       type: type,
-//       category: category,
-//       pickup: pickup,
-//       destination: destination,
-//     };
-//     fetch("http://localhost:3000/orders", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(data),
-//     })
-//       .then((response) => {
-//         console.log(response);
-//       })
-//       .catch((error) => {
-//         console.error(error);
-//       });
-//   }
-
-//   return (
-//     <form id="order-form" onSubmit={handleSubmit}>
-//       <p>Total price: KSH</p>
-//       <label htmlFor="type-options">Choose the type of premises you have</label>
-//       <select name="type" id="type-options" onChange={handleChangeType}>
-//         <option>STUDIO APARTMENT</option>
-//         <option>ONE BEDROOM APARTMENT</option>
-//         <option>TWO BEDROOM APARTMENT</option>
-//         <option>COMMERCIAL PREMISES</option>
-//       </select>
-//       <label htmlFor="category-options">Choose a package</label>
-//       <select name="category" id="category-options" onChange={handleChangeCategory}>
-//         <option>SILVER</option>
-//         <option>GOLD</option>
-//         <option>PLATINUM</option>
-//       </select>
-//       <label htmlFor="range">Slide to choose estimated distance in kilometres</label>
-//       <input
-//         id="range"
-//         type="range"
-//         name="range"
-//         min={0}
-//         max={500}
-//         value={range}
-//         onChange={handleChangeRange}
-//       />
-//       <p>{range} Kilometres</p>
-//       <label htmlFor="location-from">Pick-up</label>
-//       <input type="text" id="location-from" onChange={handleChangePickup} />
-//       <label htmlFor="location-to">Destination</label>
-//       <input type="text" id="location-to" onChange={handleChangeDestination} />
-//       <label htmlFor="btn">Check your order before submission</label>
-//       <button type="submit" className="btn">
-//         Create Order
-//       </button>
-//     </form>
-//   );
-// }
-
-// export default OrderForm;
-

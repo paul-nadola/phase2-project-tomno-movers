@@ -1,18 +1,14 @@
-import React, {useState, useEffect }  from 'react'
-import OrderForm from "./OrderForm";
+import React  from 'react'
 
 
-function DisplayOrders() {
-    
-const[orders, setOrders] = useState([])
-    function fetchOrders(){
-        fetch('http://localhost:3000/orders')
-        .then( res => res.json())
-        .then( data => setOrders(data))
-      }
-    useEffect(() =>{
-        fetchOrders()
-    },[])
+function DisplayOrders({orders, fetchOrders}) {
+    function handleDecline(id){
+        fetch(`http://localhost:3000/orders/${id}`, {
+            method:"DELETE"
+  })
+  .then(res =>res.json())
+  .then(data => fetchOrders(data))
+    }
     const displayOrders = orders.map(order =>{
         return <div id='orders' key={order.id}>
         <h1><i className='bx bx-user' ></i> {order.name}</h1>
@@ -24,10 +20,11 @@ const[orders, setOrders] = useState([])
         <p>CATEGORY : {order.category}</p>
         <p><i className='bx bxs-truck' ></i> {order.pickup}</p>
         <p><i className='bx bxs-truck' ></i> {order.destination}</p>
+        <button className='delete' onClick={() =>handleDecline(order.id)}>DECLINE</button>
         </div>
     })
   return (<>
-      <OrderForm fetchOrders = {fetchOrders}/>
+      
     <div id='order-container'>
       {displayOrders}
     </div>

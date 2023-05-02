@@ -89,7 +89,7 @@ font-size: large;}
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: firebrick;
+  background: rgb(243, 196, 76);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
@@ -100,6 +100,22 @@ font-size: large;}
 }
 
 .btn:hover {
+  box-shadow: none;
+}
+.delete {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: firebrick;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+.delete:hover {
   box-shadow: none;
 }
 
@@ -120,7 +136,7 @@ font-size: large;}
       text-align: center;
       border: .2rem solid var(--bg-color);
       font-size: larger;
-      transition: .5s e
+      transition: .5s ease-in-out;
  }
  #platinum-package:hover {
    border-color: var(--main-color);
@@ -135,7 +151,7 @@ font-size: large;}
       text-align: center;
       border: .2rem solid var(--bg-color);
       font-size: larger;
-      transition: .5s e
+      transition: .5s ease-in-out;
     }
   
     #platinum-package:hover {
@@ -150,7 +166,7 @@ font-size: large;}
    text-align: center;
    border: .2rem solid var(--bg-color);
    font-size: larger;
-   transition: .5s e
+   transition: .5s ease-in-out;
    
  }
 
@@ -166,7 +182,7 @@ font-size: large;}
       text-align: center;
       border: .2rem solid var(--bg-color);
       font-size: larger;
-      transition: .5s e
+      transition: .5s ease-in-out;
     }
   
     #gold-package:hover {
@@ -192,7 +208,7 @@ img{
           text-align: center;
           border: .2rem solid var(--bg-color);
           font-size: larger;
-          transition: .5s e
+          transition: .5s ease-in-out;
 }
  #orders:hover {
    border-color: var(--main-color);
