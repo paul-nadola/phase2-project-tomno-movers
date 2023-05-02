@@ -1,4 +1,6 @@
 import React, {useState, useEffect }  from 'react'
+import OrderForm from "./OrderForm";
+
 
 function DisplayOrders() {
     
@@ -12,21 +14,24 @@ const[orders, setOrders] = useState([])
         fetchOrders()
     },[])
     const displayOrders = orders.map(order =>{
-        return <div id='orders'>
-        <h1>CUSTOMER NAME : {order.name}</h1>
-        <p>CUSTOMER PHONE NUMBER : {order.phoneNumber}</p>
-        <p>CUSTOMER EMAIL : {order.email}</p>
+        return <div id='orders' key={order.id}>
+        <h1><i class='bx bx-user' ></i> {order.name}</h1>
+        <p><i class='bx bxs-contact' ></i> {order.phoneNumber}</p>
+        <p><i class='bx bxl-gmail'></i> {order.email}</p>
         <img src={order.imageUrl} alt={order.name} />
-        <p>TOTAL QOUTE AMOUT : {order.price}</p>
-        <p>SELECTED PACKAGE : {order.category}</p>
-        <p>PICKUP LOCATION : {order.pickup}</p>
-        <p>DESTINATION : {order.destination}</p>
+        <p><i class='bx bx-money' ></i> {order.price}</p>
+        <p>PREMISE : {order.type}</p>
+        <p>CATEGORY : {order.category}</p>
+        <p><i className='bx bxs-truck' ></i> {order.pickup}</p>
+        <p><i className='bx bxs-truck' ></i> {order.destination}</p>
         </div>
     })
-  return (
-    <div>
-        {displayOrders}
+  return (<>
+      <OrderForm fetchOrders = {fetchOrders}/>
+    <div id='order-container'>
+      {displayOrders}
     </div>
+    </>
   )
 }
 

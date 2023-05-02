@@ -177,3 +177,24 @@ img{
   height: 250px;
   width: 250px;
 }
+#order-container{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+}
+#orders{
+        background-image: url('https://media.istockphoto.com/id/1201207088/photo/brushed-aluminum-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=b30vkZ0J0HvpgO9l2qiK1IA6W7Iu6S47h3hgzEINzNg=');
+          flex: 1 1 30rem;
+          padding: 3rem 2rem 4rem;
+          border-radius: 2rem;
+          text-align: center;
+          border: .2rem solid var(--bg-color);
+          font-size: larger;
+          transition: .5s e
+}
+ #orders:hover {
+   border-color: var(--main-color);
+   transform: scale(1.02);
+ }

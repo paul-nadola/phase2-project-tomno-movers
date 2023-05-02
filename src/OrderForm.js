@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 
-function OrderForm() {
+function OrderForm({fetchOrders}) {
   const [range, setRange] = useState(0)
   const [type, setType] = useState('STUDIO APARTMENT')
   const [category, setCategory] = useState('SILVER')
@@ -71,17 +71,22 @@ function OrderForm() {
       },
       body: JSON.stringify(data),
     })
-      .then((response) => {
-        console.log(response);
-        // setName('')
-        // setNumber('')
-        // setEmail('')
-        // setType('STUDIO APARTMENT')
-        // setCategory('SILVER')
-        // setRange(10)
-        // setPickup('')
-        // setDestination('')
-    })
+      .then((response) => 
+        // console.log(response)
+        response.json())
+        
+        .then(data =>{
+            fetchOrders(data)
+            setName('')
+            setNumber('')
+            setEmail('')
+            setType('STUDIO APARTMENT')
+            setCategory('SILVER')
+            setRange(10)
+            setPickup('')
+            setDestination('')
+    }
+    )
       .catch((error) => {
         console.error(error);
       });
