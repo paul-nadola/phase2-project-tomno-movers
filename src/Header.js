@@ -11,11 +11,13 @@ function Header() {
             <form id='search'>
                 <label htmlFor="type-search">SEARCH BY TYPE</label>
                 <input type="text" placeholder='Search by type' />
-               <br />
-               <label htmlFor="category-search">SEARCH BY CATEGORY</label>
-                <input id='category-search' type="text" placeholder='Search by category' />
-
             </form>
+            <div>
+                <form id="search">
+                <label htmlFor="category-search">SEARCH BY CATEGORY</label>
+                <input id='category-search' type="text" placeholder='Search by category' />
+                </form>
+            </div>
         </div>
            
              
