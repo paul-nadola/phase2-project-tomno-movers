@@ -5,7 +5,7 @@ function Header() {
     <div id='header'>
         <div id='header-name'>
              <h1>TOMNO MOVERS</h1>
-            <p>Big or small… We can handle it all.</p>
+            <p>Reliable relocations!.</p>
         </div>
         <div>
             <form id='search'>
