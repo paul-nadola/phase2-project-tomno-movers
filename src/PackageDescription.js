@@ -31,6 +31,11 @@ function PackageDescription() {
             <li>Deep cleaning and fumigation of the clients new premises</li>
             <li>Onloading and Offloading</li>
             </div>
+            <ul id='silver-list'>
+                Truck to transport client property
+                Experienced personnel to handle client equipment, for sophisticated equipment client to provide manual or instructions on how to handle the same
+                Loading and Offloading
+            </ul>
         </div>
         <div id='platinum-package'>
             <h1>PLATINUM</h1>
@@ -48,6 +53,13 @@ function PackageDescription() {
             <li>LAN Network installation, wifi installation, cable TV installation and landscaping according to customer specifications</li>
             <li>Onloading and Offloading</li>
             </div>
+            <ul id='gold-list'>
+                Truck to transport client property
+                Experienced personnel to handle client equipment, for sophisticated equipment client to provide manual or instructions on how to handle the same
+                Deep cleaning and fumigation of the client's new premises
+                LAN Network installation, wifi installation, cable TV installation and landscaping according to customer specifications
+                Loading and Offloading
+            </ul>
         </div>
     </div>
   )
