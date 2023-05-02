@@ -116,6 +116,19 @@
       "pickup": "Kasarani, Sunton",
       "destination": "Gichagi",
       "id": 15
+    },
+    {
+      "name": "Moringa School",
+      "phoneNumber": "01101234567",
+      "email": "moringaoperations@moringaschool.com",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReZehRCIbqReo7yJPblv6oXskD3lUUwAlqvg&usqp=CAU",
+      "price": 15750,
+      "range": 21,
+      "type": "COMMERCIAL PREMISES",
+      "category": "PLATINUM",
+      "pickup": "Westlands",
+      "destination": "Ngong Lane",
+      "id": 16
     }
   ]
 }
