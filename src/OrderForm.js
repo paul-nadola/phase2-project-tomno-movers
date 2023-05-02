@@ -29,24 +29,24 @@ function OrderForm() {
     // Prices per km based on premises type and package
     const prices = {
       'STUDIO APARTMENT': {
-        'SILVER': 200,
-        'GOLD': 250,
-        'PLATINUM': 300,
+        'SILVER': 400,
+        'GOLD': 450,
+        'PLATINUM': 500,
       },
       'ONE BEDROOM APARTMENT': {
-        'SILVER': 250,
-        'GOLD': 300,
-        'PLATINUM': 350,
+        'SILVER': 450,
+        'GOLD': 500,
+        'PLATINUM': 550,
       },
       'TWO BEDROOM APARTMENT': {
-        'SILVER': 300,
-        'GOLD': 350,
-        'PLATINUM': 400,
+        'SILVER': 500,
+        'GOLD': 550,
+        'PLATINUM': 600,
       },
       'COMMERCIAL PREMISES': {
-        'SILVER': 400,
-        'GOLD': 500,
-        'PLATINUM': 600,
+        'SILVER': 650,
+        'GOLD': 700,
+        'PLATINUM': 750,
       },
     }
 
@@ -74,13 +74,13 @@ function OrderForm() {
         <option value="PLATINUM">PLATINUM</option>
       </select>
       <label htmlFor="range">Slide to choose estimated distance in kilometres</label>
-      <input id="range" type="range" name="range" min={0} max={500} value={range} onChange={handleChangeRange} />
+      <input id="range" type="range" name="range" min={10} max={500} value={range} onChange={handleChangeRange} />
       <p>{range} Kilometres</p>
       <label htmlFor="location-from">Pick-up</label>
       <input type="text" id="location-from" />
       <label htmlFor="location-to">Destination</label>
       <input type="text" id='location-to' />
-      <label htmlFor="btn">Check your order before submission</label>
+      <label htmlFor="btn">Kindly recheck your order before submission</label>
       <button type='submit' className='btn'>Create Order</button>
     </form>
   )

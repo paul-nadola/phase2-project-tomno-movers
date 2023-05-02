@@ -36,7 +36,9 @@ body {
   background-color: #F1CEDF;
   color: black;
 }
-
+#range{
+  width: 50%;
+}
 #header-name{
   display: block;
   float: left;
@@ -61,7 +63,7 @@ font-size: large;}
   float: left;
 }
 #order-form{
-  background-color: var(--main-color);
+  background-color: silver;
   align-items: center;
   justify-content: center;
   color: black;
@@ -112,23 +114,9 @@ font-size: large;}
    border-color: var(--main-color);
    transform: scale(1.02);
  }
-    #platinum-package {
-      background-color: #e5e4e2;
-      flex: 1 1 30rem;
-      padding: 3rem 2rem 4rem;
-      border-radius: 2rem;
-      text-align: center;
-      border: .2rem solid var(--bg-color);
-      font-size: larger;
-      transition: .5s e
-    }
-  
-    #platinum-package:hover {
-      border-color: var(--main-color);
-      transform: scale(1.02);
-    }
+
  #silver-package {
-   background-color: #d89a9a;
+   background-color: silver;
    flex: 1 1 30rem;
    padding: 3rem 2rem 4rem;
    border-radius: 2rem;
