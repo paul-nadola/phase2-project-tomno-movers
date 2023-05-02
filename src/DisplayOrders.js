@@ -15,11 +15,11 @@ const[orders, setOrders] = useState([])
     },[])
     const displayOrders = orders.map(order =>{
         return <div id='orders' key={order.id}>
-        <h1><i class='bx bx-user' ></i> {order.name}</h1>
-        <p><i class='bx bxs-contact' ></i> {order.phoneNumber}</p>
-        <p><i class='bx bxl-gmail'></i> {order.email}</p>
+        <h1><i className='bx bx-user' ></i> {order.name}</h1>
+        <p><i className='bx bxs-contact' ></i> {order.phoneNumber}</p>
+        <p><i className='bx bxl-gmail'></i> {order.email}</p>
         <img src={order.imageUrl} alt={order.name} />
-        <p><i class='bx bx-money' ></i> {order.price}</p>
+        <p><i className='bx bx-money' ></i> {order.price}</p>
         <p>PREMISE : {order.type}</p>
         <p>CATEGORY : {order.category}</p>
         <p><i className='bx bxs-truck' ></i> {order.pickup}</p>
