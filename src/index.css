@@ -21,14 +21,19 @@ html {
 }
 
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
+  background-image: url("https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JleSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
+  backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 10px;
+  margin: 20px;
 }
 #header{
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: firebrick;
+  background-color: #F1CEDF;
   color: black;
 }
 
