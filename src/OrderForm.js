@@ -73,9 +73,9 @@ function OrderForm() {
         <option value="GOLD">GOLD</option>
         <option value="PLATINUM">PLATINUM</option>
       </select>
-      <label htmlFor="range">Slide to choose estimated distance in kilometres</label>
+      <label htmlFor="range">Slide to choose estimated distance in kilometers</label>
       <input id="range" type="range" name="range" min={0} max={500} value={range} onChange={handleChangeRange} />
-      <p>{range} Kilometres</p>
+      <p>{range} Kilometers</p>
       <label htmlFor="location-from">Pick-up</label>
       <input type="text" id="location-from" />
       <label htmlFor="location-to">Destination</label>

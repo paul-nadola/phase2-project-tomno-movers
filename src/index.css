@@ -35,14 +35,18 @@ body {
   width: 100%;
   flex-direction: column;
   background-color: #F1CEDF;
-  color: black;
+  color: rgb(15, 6, 70);
+  padding-top: 55px;
 }
 
 #header-name{
   display: block;
   float: left;
 }
-
+#intro{
+  font-style: oblique;
+  font-size: 20px;
+}
 #search input{
 font-size: large;}
 #search{
@@ -69,9 +73,11 @@ font-size: large;}
   color: black;
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: .8rem;
   margin: .7rem 0;
+  padding-top: 10px;
 }
 #category-options, #type-options, #location-from, #location-to{
   font-size: larger;
@@ -99,7 +105,9 @@ font-size: large;}
    align-items: center;
    flex-wrap: wrap;
    gap: 2rem;
+   
  }
+
  #platinum-package{
   background-color: #e5e4e2;
     flex: 1 1 30rem;
@@ -115,7 +123,7 @@ font-size: large;}
    transform: scale(1.02);
  }
     #platinum-package {
-      background-color: #e5e4e2;
+      background-image: url('https://media.istockphoto.com/id/1201207088/photo/brushed-aluminum-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=b30vkZ0J0HvpgO9l2qiK1IA6W7Iu6S47h3hgzEINzNg=');
       flex: 1 1 30rem;
       padding: 3rem 2rem 4rem;
       border-radius: 2rem;
@@ -127,10 +135,10 @@ font-size: large;}
   
     #platinum-package:hover {
       border-color: var(--main-color);
-      transform: scale(1.02);
+      transform: scale(1.1);
     }
  #silver-package {
-   background-color: #d89a9a;
+   background-image: url('https://media.istockphoto.com/id/982153814/photo/silver-metal-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=Cxga_YGAZoqmzbaHCNCAQFSvyyihQlQDyU3TT04-wPc=');
    flex: 1 1 30rem;
    padding: 3rem 2rem 4rem;
    border-radius: 2rem;
@@ -138,14 +146,15 @@ font-size: large;}
    border: .2rem solid var(--bg-color);
    font-size: larger;
    transition: .5s e
+   
  }
 
  #silver-package:hover {
    border-color: var(--main-color);
-   transform: scale(1.02);
+   transform: scale(1.1);
  }
 #gold-package {
-      background-color: #d4af37;
+      background-image: url('https://media.istockphoto.com/id/679468742/photo/gold-foil-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=BNBGicUcfaOzAr6kq5c92eRuLyrTeUDX1zTG14Py-RM=');
       flex: 1 1 30rem;
       padding: 3rem 2rem 4rem;
       border-radius: 2rem;
@@ -157,5 +166,5 @@ font-size: large;}
   
     #gold-package:hover {
       border-color: var(--main-color);
-      transform: scale(1.02);
+      transform: scale(1.1);
     }

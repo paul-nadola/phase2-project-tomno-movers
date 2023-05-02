@@ -9,7 +9,7 @@ function PackageDescription() {
             <ul id='silver-list'>
                 Truck to transport client property
                 Experienced personnel to handle client equipment, for sophisticated equipment client to provide manual or instructions on how to handle the same
-                Onloading and Offloading
+                Loading and Offloading
             </ul>
         </div>
         <div id='gold-package'>
@@ -19,7 +19,7 @@ function PackageDescription() {
                 Truck to transport client property
                 Experienced personnel to handle client equipment, for sophisticated equipment client to provide manual or instructions on how to handle the same
                 Deep cleaning and fumigation of the clients new premises
-                Onloading and Offloading
+                Loading and Offloading
             </ul>
         </div>
         <div id='platinum-package'>
@@ -30,7 +30,7 @@ function PackageDescription() {
                 Experienced personnel to handle client equipment, for sophisticated equipment client to provide manual or instructions on how to handle the same
                 Deep cleaning and fumigation of the client's new premises
                 LAN Network installation, wifi installation, cable TV installation and landscaping according to customer specifications
-                Onloading and Offloading
+                Loading and Offloading
             </ul>
         </div>
     </div>

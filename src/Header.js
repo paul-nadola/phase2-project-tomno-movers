@@ -4,17 +4,17 @@ function Header() {
   return (
     <div id='header'>
         <div id='header-name'>
-             <h1>TOMNO MOVERS</h1>
-            <p>Reliable relocations!</p>
+             <h1>PRIME TIME MOVERS</h1>
+            <p id="intro">Premier moving solutions!</p>
         </div>
         <div>
             <form id='search'>
-                <label htmlFor="type-search">SEARCH BY TYPE</label>
-                <input type="text" placeholder='Search by type' />
+                <label htmlFor="type-search"></label>
+                <input type="search" placeholder='Search by type' />
             </form>
             <div>
                 <form id="search">
-                <label htmlFor="category-search">SEARCH BY CATEGORY</label>
+                <label htmlFor="category-search"></label>
                 <input id='category-search' type="text" placeholder='Search by category' />
                 </form>
             </div>
