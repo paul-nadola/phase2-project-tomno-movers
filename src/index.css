@@ -82,7 +82,8 @@ font-size: large;}
   margin: .7rem 0;
   padding-top: 10px;
 }
-#category-options, #type-options, #location-from, #location-to{
+#category-options, #type-options, #location-from, #location-to,
+#customer-name, #customer-number, #customer-email, #customer-image{
   font-size: larger;
 }
 .btn {
@@ -172,3 +173,7 @@ font-size: large;}
       border-color: var(--main-color);
       transform: scale(1.1);
     }
+img{
+  height: 250px;
+  width: 250px;
+}
