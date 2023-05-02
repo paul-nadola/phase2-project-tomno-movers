@@ -1,0 +1,12 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "type": "STUDIO",
+      "price": 20000,
+      "category": "GOLD",
+      "description": "Truck provided, movers to carry customer belongings and onloading and offloading items",
+      "quantity": 58
+    }
+]
+}
