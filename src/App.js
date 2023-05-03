@@ -5,10 +5,11 @@ import DisplayOrders from "./DisplayOrders";
 import OrderForm from "./OrderForm";
 import SearchBar from "./SearchBar";
 
+
 function App() {
 const[orders, setOrders] = useState([])
 
-      function fetchOrders(){
+      function fetchOrders(){  
         fetch('http://localhost:3000/orders')
         .then( res => res.json())
         .then( data => setOrders(data))

@@ -37,6 +37,7 @@ body {
   background-color: #F1CEDF;
   color: rgb(15, 6, 70);
   padding-top: 55px;
+  padding-bottom: 55px;
 }
 #range{
   width: 50%;
@@ -44,6 +45,7 @@ body {
 #header-name{
   display: block;
   float: left;
+    font-size: x-large;
 }
 #intro{
   font-style: oblique;
@@ -51,29 +53,30 @@ body {
 }
 #SearchBar{
 width: 100%;
+height: 40px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-color: rgb(231, 171, 199);
-color: white;
+background-color: rgb(90, 23, 54);
+color: rgb(255, 255, 255);
 }
 #SearchBar:hover{
-  background-color: rgb(204, 220, 223);
+  background-color: rgb(251, 252, 252);
   color: rgb(8, 8, 8);
 }
  #SearchBar:active{
   background-color: white;
-  color: rgb(180, 138, 138);
+  color: rgb(238, 94, 207);
  }
 
-#header-name{
-  font-size: x-large;
-}
 #header div{
   float: left;
 }
 .order-form{
   background-color: silver;
   background-image: url('https://images.unsplash.com/photo-1680443285773-ef42672d00da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjE0fHxsaWdodCUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
+  backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
   justify-content: center;
   color: black;
