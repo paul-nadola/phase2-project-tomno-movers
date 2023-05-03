@@ -1,7 +1,9 @@
 
 import React, { useState } from 'react'
+import CustomerOrders from "./CustomerOrders";
 
-function OrderForm({fetchOrders}) {
+
+function OrderForm({fetchOrders , orders}) {
   const [range, setRange] = useState(0)
   const [type, setType] = useState('STUDIO APARTMENT')
   const [category, setCategory] = useState('SILVER')
@@ -125,8 +127,8 @@ function OrderForm({fetchOrders}) {
   }
 
 
-  return (
-    <form id="order-form" onSubmit={handleFormSubmit}>
+  return (<>
+    <form className="order-form" onSubmit={handleFormSubmit}>
       <label htmlFor="customer-name">Enter your name</label>
       <input type="text" placeholder='Enter your name' id='customer-name' onChange={handleName}/>
       <label htmlFor="customer-number">Enter your phone number starting with your country code without the '+'</label>
@@ -159,6 +161,9 @@ function OrderForm({fetchOrders}) {
       <label htmlFor="btn">Kindly recheck your order before submission</label>
       <button type='submit' className='btn'>Create Order</button>
     </form>
+    <CustomerOrders fetchOrders = {fetchOrders} orders = {orders}
+    range = {range} handleChangeRange = {handleChangeRange}/>
+    </>
   )
 }
 

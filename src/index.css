@@ -68,7 +68,7 @@ font-size: large;}
 #header div{
   float: left;
 }
-#order-form{
+.order-form{
   background-color: silver;
   background-image: url('https://images.unsplash.com/photo-1680443285773-ef42672d00da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjE0fHxsaWdodCUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
   align-items: center;
@@ -193,24 +193,24 @@ img{
   height: 250px;
   width: 250px;
 }
-#order-container{
+.order-container{
     display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       gap: 2rem;
 }
-#orders{
+.orders{
         background-image: url('https://media.istockphoto.com/id/1201207088/photo/brushed-aluminum-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=b30vkZ0J0HvpgO9l2qiK1IA6W7Iu6S47h3hgzEINzNg=');
           flex: 1 1 30rem;
           padding: 3rem 2rem 4rem;
           border-radius: 2rem;
           text-align: center;
           border: .2rem solid var(--bg-color);
-          font-size: larger;
+          font-size: large;
           transition: .5s ease-in-out;
 }
- #orders:hover {
+ .orders:hover {
    border-color: var(--main-color);
    transform: scale(1.02);
  }

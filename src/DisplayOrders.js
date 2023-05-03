@@ -10,7 +10,7 @@ function DisplayOrders({orders, fetchOrders}) {
   .then(data => fetchOrders(data))
     }
     const displayOrders = orders.map(order =>{
-        return <div id='orders' key={order.id}>
+        return <div className='orders' key={order.id}>
         <h1><i className='bx bx-user' ></i> {order.name}</h1>
         <p><i className='bx bxs-contact' ></i> {order.phoneNumber}</p>
         <p><i className='bx bxl-gmail'></i> {order.email}</p>
@@ -25,7 +25,7 @@ function DisplayOrders({orders, fetchOrders}) {
     })
   return (<>
       
-    <div id='order-container'>
+    <div className='order-container'>
       {displayOrders}
     </div>
     </>
