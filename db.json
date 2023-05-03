@@ -1,0 +1,28 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "type": "STUDIO",
+      "price": 20000,
+      "category": "SILVER",
+      "description": "Truck provided, movers to carry customer belongings and loading and offloading items",
+      "quantity": 47
+    },
+    {
+      "id": 2,
+      "type": "ONE BEDROOM APARTMENT",
+      "price": 37000,
+      "category": "GOLD",
+      "description": "Truck provided, movers to carry customer belongings and loading and offloading items and Deep cleaning and fumigation of the clients new premises",
+      "quantity": 58
+    },
+    {
+      "id": 3,
+      "type": "COMMERCIAL PREMISES",
+      "price": 90000,
+      "category": "PLATINUM",
+      "description": "Truck provided, movers to carry customer belongings and loading and cable TV installation and landscaping according to customer specifications",
+      "quantity": 39
+    }
+  ]
+}
