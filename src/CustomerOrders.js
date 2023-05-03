@@ -170,7 +170,7 @@ return (
 const editOrders = orders.map((order) => {
 if (editingOrderId === order.id) {
   return (<>
-    <form className='order-form' key={order.id} >
+    <form className='order-form' key={order.id} onSubmit={handleFormSubmit}>
       <div className='orders' >
         <button className='delete' onClick={() => handleToggle(order.id)}>
           Cancel Changes
@@ -217,7 +217,7 @@ if (editingOrderId === order.id) {
       <p><i className='bx bx-trip'></i> {range} Kilometers</p>
         <p><i className='bx bxs-truck' ></i> <input type="text" value={pickup} onChange={handleChangePickup}/></p>
         <p><i className='bx bxs-truck' ></i> <input type="text" value={destination} onChange={handleChangeDestination}/></p>
-        <button type='submit' className='btn' onSubmit={handleFormSubmit}>SUBMIT CHANGES</button>
+        <button type='submit' className='btn' >SUBMIT CHANGES</button>
         <br />
         <button className='delete' onClick={handleDelete} >DELETE ORDER</button>
 </div>
@@ -233,4 +233,3 @@ if (editingOrderId === order.id) {
 }
 
 export default CustomerOrders
-

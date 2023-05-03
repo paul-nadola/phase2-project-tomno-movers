@@ -157,10 +157,11 @@ function OrderForm({fetchOrders , orders}) {
       <label htmlFor="location-from">Pick-up</label>
       <input type="text" placeholder='Enter pick-up location' id="location-from" onChange={handleChangePickup}/>
       <label htmlFor="location-to">Destination</label>
-      <input type="text" placeholder='Enter destination' id='location-to' onChange={handleChangeDestination}/>
+      <input type="text" placeholder='Enter destination' id='location-to'  onChange={handleChangeDestination} />
       <label htmlFor="btn">Kindly recheck your order before submission</label>
       <button type='submit' className='btn'>Create Order</button>
     </form>
+    <br />
     <CustomerOrders fetchOrders = {fetchOrders} orders = {orders}
     range = {range} handleChangeRange = {handleChangeRange}/>
     </>
