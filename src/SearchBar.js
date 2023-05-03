@@ -10,7 +10,7 @@ function SearchBar({ onSearch }) {
 
   return (
     <div>
-        <input id="SearchBar" type="text" value={searchQuery} onChange={handleSearch} placeholder='Search by type' />
+        <input id="SearchBar" type="text" value={searchQuery} onChange={handleSearch} placeholder='Search by type e.g. STUDIO' />
     </div>
   );
 }
