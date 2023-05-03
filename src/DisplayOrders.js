@@ -15,6 +15,7 @@ function DisplayOrders({orders, fetchOrders}) {
         <p><i className='bx bxs-contact' ></i> {order.phoneNumber}</p>
         <p><i className='bx bxl-gmail'></i> {order.email}</p>
         <img src={order.imageUrl} alt={order.name} />
+        <p><i className='bx bx-trip'></i> {order.range} Kilometers</p>
         <p><i className='bx bx-money' ></i> {order.price}</p>
         <p>PREMISE : {order.type}</p>
         <p>CATEGORY : {order.category}</p>
