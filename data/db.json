@@ -27,19 +27,6 @@
       "id": 8
     },
     {
-      "name": "Vivian Tomno",
-      "phoneNumber": "254758462587",
-      "email": "nadolapaul@gmail.com",
-      "imageUrl": "https://www.winemag.com/wp-content/uploads/2019/01/Urban_Grape_1920x1280.jpg",
-      "price": 102000,
-      "range": 136,
-      "type": "COMMERCIAL PREMISES",
-      "category": "PLATINUM",
-      "pickup": "Wines and Spirits",
-      "destination": "Bar",
-      "id": 9
-    },
-    {
       "name": "Book Master",
       "phoneNumber": "254712345678",
       "email": "owenmaina@gmail.com",
@@ -116,6 +103,19 @@
       "pickup": "Westlands",
       "destination": "Ngong Lane",
       "id": 16
+    },
+    {
+      "name": "Vivian Tomno",
+      "phoneNumber": "254782021686",
+      "email": "tomnoviv@gmail.com",
+      "imageUrl": "https://images.unsplash.com/photo-1624204386084-dd8c05e32226?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YXBhcnRtZW50JTIwYnVpbGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60",
+      "price": 16500,
+      "range": 33,
+      "type": "ONE BEDROOM APARTMENT",
+      "category": "GOLD",
+      "pickup": "south c",
+      "destination": "westlands",
+      "id": 17
     }
   ]
 }

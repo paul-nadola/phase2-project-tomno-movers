@@ -128,44 +128,48 @@ function OrderForm({fetchOrders , orders}) {
 
 
   return (<>
+  
     <form className="order-form" onSubmit={handleFormSubmit}>
-      <label htmlFor="customer-name">Enter your name</label>
-      <input type="text" placeholder='Enter your name' id='customer-name' onChange={handleName}/>
+      <h2>ORDER FORM</h2>
+      <p class="prompt">Kindly fill out the following form to make an order!</p><br/>
+      <label htmlFor='customer-name'>Enter your name</label>
+      <input type="text" placeholder='Name' id='customer-name' onChange={handleName}/><br/>
       <label htmlFor="customer-number">Enter your phone number starting with your country code without the '+'</label>
-      <input type="number" placeholder='Enter your phone number' id='customer-number' onChange={handleNumber}/>
+      <input type="number" placeholder='Phone number' id='customer-number' onChange={handleNumber}/><br/>
       <label htmlFor="customer-email">Kindly enter your email address</label>
-      <input type="text" placeholder='Enter your email address' id='customer-email' onChange={handleEmail}/>
+      <input type="text" placeholder='email address' id='customer-email' onChange={handleEmail}/><br/>
       <label htmlFor="customer-image">Kindly enter a URL of an image of your premises</label>
-      <input type="url" placeholder='Enter your image url' id='customer-image' onChange={handleImage}/>
-      <p>Total price: KSH {calculatePrice(getPricePerKm(type, category), range)}</p>
+      <input type="url" placeholder='image url' id='customer-image' onChange={handleImage}/><br/>
+      
       <label htmlFor="type-options">Choose the type of premises you have</label>
       <select name="type" id="type-options" value={type} onChange={handleChangeType}>
         <option value="STUDIO APARTMENT">STUDIO APARTMENT</option>
         <option value="ONE BEDROOM APARTMENT">ONE BEDROOM APARTMENT</option>
         <option value="TWO BEDROOM APARTMENT">TWO BEDROOM APARTMENT</option>
         <option value="COMMERCIAL PREMISES">COMMERCIAL PREMISES</option>
-      </select>
+      </select><br/>
       <label htmlFor="category-options">Choose a package</label>
       <select name="category" id="category-options" value={category} onChange={handleChangeCategory}>
         <option value="SILVER">SILVER</option>
         <option value="GOLD">GOLD</option>
         <option value="PLATINUM">PLATINUM</option>
-      </select>
+      </select><br/>
       <label htmlFor="range">Slide to choose estimated distance in kilometers</label>
       <input id="range" type="range" name="range" min={10} max={500} value={range} onChange={handleChangeRange} />
-      <p>{range} Kilometers</p>
+      <p>{range} Kilometers</p><br/>
+      <p><strong>Total price:</strong> KSH {calculatePrice(getPricePerKm(type, category), range)}</p><br/>
       <label htmlFor="location-from">Pick-up</label>
       <input type="text" placeholder='Enter pick-up location' id="location-from" onChange={handleChangePickup}/>
       <label htmlFor="location-to">Destination</label>
-      <input type="text" placeholder='Enter destination' id='location-to'  onChange={handleChangeDestination} />
-      <label htmlFor="btn">Kindly recheck your order before submission</label>
+      <input type="text" placeholder='Enter destination' id='location-to'  onChange={handleChangeDestination} /><br/>
+      <label htmlFor="btn">Kindly confirm your details before submission</label><br/>
       <button type='submit' className='btn'>Create Order</button>
     </form>
     <br />
     <CustomerOrders fetchOrders = {fetchOrders} orders = {orders}
-    range = {range} handleChangeRange = {handleChangeRange}/>
+    range = {range} handleChangeRange = {handleChangeRange}/><br/>
     </>
   )
 }
 
- export default OrderForm
+ export default OrderForm;

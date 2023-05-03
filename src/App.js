@@ -26,7 +26,7 @@ const[orders, setOrders] = useState([])
     
   return (
     <div className="App">
-      <Header/>
+      <Header/><br/>
       <SearchBar onSearch={handleSearch} />
       <PackageDescription/>
       <OrderForm fetchOrders = {fetchOrders} orders = {orders}/>

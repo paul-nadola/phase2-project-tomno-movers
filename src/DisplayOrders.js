@@ -33,4 +33,4 @@ function DisplayOrders({orders, fetchOrders}) {
   )
 }
 
-export default DisplayOrders
+export default DisplayOrders;

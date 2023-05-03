@@ -34,11 +34,15 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: #F1CEDF;
-  color: rgb(15, 6, 70);
+  background-image: url('https://images.unsplash.com/photo-1521133573892-e44906baee46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHNpbHZlciUyQyUyMGdvbGQlMjBhbmQlMjBwbGF0aW51bSUyMGh1ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60');
+  backdrop-filter: blur(50px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(7, 7, 20);
   padding-top: 55px;
   padding-bottom: 55px;
 }
+
 #range{
   width: 50%;
 }
@@ -56,7 +60,7 @@ width: 100%;
 height: 40px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-color: rgb(90, 23, 54);
+background-color: rgb(107, 10, 59);
 color: rgb(255, 255, 255);
 }
 #SearchBar:hover{
@@ -71,6 +75,10 @@ color: rgb(255, 255, 255);
 #header div{
   float: left;
 }
+.prompt{
+  font-size: 15px;
+font-style: oblique;
+}
 .order-form{
   background-color: silver;
   background-image: url('https://images.unsplash.com/photo-1680443285773-ef42672d00da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjE0fHxsaWdodCUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
@@ -82,7 +90,7 @@ color: rgb(255, 255, 255);
   color: black;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: .8rem;
   margin: .7rem 0;
@@ -90,7 +98,7 @@ color: rgb(255, 255, 255);
 }
 #category-options, #type-options, #location-from, #location-to,
 #customer-name, #customer-number, #customer-email, #customer-image{
-  font-size: larger;
+  font-size: 18px;
 }
 .btn {
   display: inline-block;
@@ -134,7 +142,7 @@ color: rgb(255, 255, 255);
    
  }
 
- #platinum-package{
+/* #platinum-package{
   background-color: #e5e4e2;
     flex: 1 1 30rem;
       padding: 3rem 2rem 4rem;
@@ -142,18 +150,18 @@ color: rgb(255, 255, 255);
       text-align: center;
       border: .2rem solid var(--bg-color);
       font-size: larger;
-      transition: .5s ease-in-out;
+      transition: .4s ease-in-out;
  }
  #platinum-package:hover {
    border-color: var(--main-color);
    transform: scale(1.02);
- }
+ }*/
 
     #platinum-package {
       background-image: url('https://media.istockphoto.com/id/1201207088/photo/brushed-aluminum-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=b30vkZ0J0HvpgO9l2qiK1IA6W7Iu6S47h3hgzEINzNg=');
       flex: 1 1 30rem;
       padding: 3rem 2rem 4rem;
-      border-radius: 2rem;
+      border-radius: 3rem;
       text-align: center;
       border: .2rem solid var(--bg-color);
       font-size: larger;
@@ -163,6 +171,7 @@ color: rgb(255, 255, 255);
     #platinum-package:hover {
       border-color: var(--main-color);
       transform: scale(1.1);
+      rotate: 2deg;
     }
  #silver-package {
    background-image: url('https://media.istockphoto.com/id/982153814/photo/silver-metal-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=Cxga_YGAZoqmzbaHCNCAQFSvyyihQlQDyU3TT04-wPc=');
@@ -179,6 +188,7 @@ color: rgb(255, 255, 255);
  #silver-package:hover {
    border-color: var(--main-color);
    transform: scale(1.1);
+   rotate: 2deg;
  }
 #gold-package {
       background-image: url('https://media.istockphoto.com/id/679468742/photo/gold-foil-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=BNBGicUcfaOzAr6kq5c92eRuLyrTeUDX1zTG14Py-RM=');
@@ -194,6 +204,8 @@ color: rgb(255, 255, 255);
     #gold-package:hover {
       border-color: var(--main-color);
       transform: scale(1.1);
+      rotate: 2deg;
+      translate: 1rem;
     }
 img{
   height: 250px;
@@ -208,7 +220,10 @@ img{
 }
 .orders{
         background-image: url('https://media.istockphoto.com/id/1201207088/photo/brushed-aluminum-texture-background.jpg?b=1&s=170667a&w=0&k=20&c=b30vkZ0J0HvpgO9l2qiK1IA6W7Iu6S47h3hgzEINzNg=');
-          flex: 1 1 30rem;
+        backdrop-filter: blur(10px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 1 1 30rem;
           padding: 3rem 2rem 4rem;
           border-radius: 2rem;
           text-align: center;
