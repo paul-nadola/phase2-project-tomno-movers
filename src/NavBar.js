@@ -13,7 +13,7 @@ const linkStyles = {
 
 function NavBar() {
   return (
-    <div>
+    <div id="links">
       <NavLink
         to="/"
         exact
