@@ -167,9 +167,8 @@ return (
 );
 });
 
-const editOrders = orders.map((order) => {
-if (editingOrderId === order.id) {
-  return (<>
+const editOrders = orders.map( order => {
+  return (editingOrderId === order.id ? (
     <form className='order-form' key={order.id} onSubmit={handleFormSubmit}>
       <div className='orders' >
         <button className='delete' onClick={() => handleToggle(order.id)}>
@@ -222,9 +221,8 @@ if (editingOrderId === order.id) {
         <button className='delete' onClick={handleDelete} >DELETE ORDER</button>
 </div>
   </form>
-  </>
-      )}
-    })
+  ) : null);
+});
   return (
     <div className='order-container'>
       {editingOrderId? editOrders : clientOrders}
