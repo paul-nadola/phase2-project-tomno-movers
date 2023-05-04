@@ -1,7 +1,10 @@
 import React from 'react'
 
 function PackageDescription() {
-  return (
+  return (<>
+  <h2>Welcome to Prime Time Movers</h2>
+  <p>Kindly browse through our products and select one that suits you</p>
+  <p>A flat rate is charged on the first ten kilometres on every package</p>
     <div id='packages'>
         <div id='silver-package'>
             <h1>SILVER</h1>
@@ -50,6 +53,7 @@ function PackageDescription() {
             </div>
         </div>
     </div>
+    </>
   )
 }
 

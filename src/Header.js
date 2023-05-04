@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Header() {
   return (
     <div id='header'>
@@ -10,9 +9,10 @@ function Header() {
         {/* <form id='search'>
             <input type="text" placeholder='Search by type' />
             <input type="text" placeholder='Search by category' />
-
-        </form> */}
+            
+          </form> */}
     </div>
+  
   )
 }
 

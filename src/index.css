@@ -235,3 +235,6 @@ img{
    border-color: var(--main-color);
    transform: scale(1.02);
  }
+ h2, p{
+  font-size: large;
+ }

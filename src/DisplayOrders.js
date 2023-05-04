@@ -25,7 +25,7 @@ function DisplayOrders({orders, fetchOrders}) {
         </div>
     })
   return (<>
-      
+      <h1>ADMIN SECTION</h1>
     <div className='order-container'>
       {displayOrders}
     </div>
