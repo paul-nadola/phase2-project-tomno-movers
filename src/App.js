@@ -11,7 +11,7 @@ function App() {
   const [orders, setOrders] = useState([]);
 
   function fetchOrders() {
-    fetch("http://localhost:3000/orders")
+    fetch("https://prime-time-movers.onrender.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }
@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   function handleSearch(query) {
-    fetch(`http://localhost:3000/orders?type=${query}`)
+    fetch(`https://prime-time-movers.onrender.com/orders?type=${query}`)
       .then((response) => response.json())
       .then((data) => setOrders(data));
   }

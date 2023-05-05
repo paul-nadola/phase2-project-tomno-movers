@@ -66,7 +66,7 @@ function OrderForm({fetchOrders , orders, handleSearch }) {
     destination: destination,
     };
     console.log(data)
-    fetch("http://localhost:3000/orders", {
+    fetch("https://prime-time-movers.onrender.com/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -46,7 +46,7 @@ function CustomerOrders({ orders, fetchOrders }) {
     }
   
   function handleDelete(){
-        fetch(`http://localhost:3000/orders/${editingOrderId}`, {
+        fetch(`https://prime-time-movers.onrender.com/orders/${editingOrderId}`, {
             method:"DELETE"
   })
   .then(res =>res.json())
@@ -70,7 +70,7 @@ function CustomerOrders({ orders, fetchOrders }) {
     destination,
   };
 
-  fetch(`http://localhost:3000/orders/${editingOrderId}`, {
+  fetch(`https://prime-time-movers.onrender.com/orders/${editingOrderId}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",

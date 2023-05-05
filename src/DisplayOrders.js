@@ -3,7 +3,7 @@ import React  from 'react'
 
 function DisplayOrders({orders, fetchOrders}) {
     function handleDecline(id){
-        fetch(`http://localhost:3000/orders/${id}`, {
+        fetch(`https://prime-time-movers.onrender.com/orders/${id}`, {
             method:"DELETE"
   })
   .then(res =>res.json())
