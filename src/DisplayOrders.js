@@ -21,7 +21,7 @@ function DisplayOrders({orders, fetchOrders}) {
         <p>CATEGORY : {order.category}</p>
         <p><i className='bx bxs-truck' ></i> {order.pickup}</p>
         <p><i className='bx bxs-truck' ></i> {order.destination}</p>
-        <button className='delete' onClick={() =>handleDecline(order.id)}>DECLINE</button>
+        <button className='delete' onClick={() =>handleDecline(order.id)}>DECLINE ORDER</button>
         </div>
     })
   return (<>
